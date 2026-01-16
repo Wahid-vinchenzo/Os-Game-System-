@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap');
+
+body{
+background:linear-gradient(135deg,#1d2671,#c33764);
+color:white;
+font-family:'Orbitron','Poppins',sans-serif;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+height:100vh;
+margin:0;
+overflow:hidden;
+}
+
+/* Hide system */
+.hide{
+display:none !important;
+}
+
+/* Card */
+.box{
+position:absolute;
+background:rgba(0,0,0,0.7);
+padding:35px;
+width:480px;
+text-align:center;
+border-radius:18px;
+box-shadow:0 0 30px rgba(0,0,0,0.8);
+animation:pop 0.4s ease;
+}
+
+/* Animation */
+@keyframes pop{
+0%{transform:scale(0.8);opacity:0;}
+100%{transform:scale(1);opacity:1;}
+}
+
+/* Headings */
+h1{
+font-size:32px;
+font-weight:800;
+letter-spacing:2px;
+color:#facc15;
+text-shadow:0 0 10px #facc15;
+}
+
+h2{
+font-size:20px;
+margin-bottom:15px;
+}
+
+/* Buttons */
+button{
+width:100%;
+padding:14px;
+margin:8px 0;
+border:none;
+border-radius:10px;
+background:linear-gradient(135deg,#38bdf8,#22c55e);
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+color:black;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.07);
+background:linear-gradient(135deg,#22c55e,#38bdf8);
+box-shadow:0 0 15px #22c55e;
+}
+
+/* Quiz options */
+.options button{
+background:linear-gradient(135deg,#facc15,#fb923c);
+color:black;
+font-weight:700;
+}
+
+.options button:hover{
+background:linear-gradient(135deg,#fb923c,#facc15);
+box-shadow:0 0 10px #facc15;
+}
+
+/* Inputs */
+textarea,input{
+width:100%;
+padding:10px;
+margin:6px 0;
+border-radius:8px;
+border:none;
+font-size:13px;
+font-family:'Poppins',sans-serif;
+}
+
+/* Life + Score */
+p{
+font-size:14px;
+margin:6px;
+}
+
+#life{
+color:#f43f5e;
+font-weight:bold;
+text-shadow:0 0 5px red;
+}
+
+#score{
+color:#22c55e;
+font-weight:bold;
+}
+
+/* Memory result */
+pre{
+background:#020617;
+padding:12px;
+border-radius:10px;
+text-align:left;
+color:#38bdf8;
+font-size:12px;
+font-family:'Poppins',sans-serif;
+}
+
+/* Deadlock result */
+#result{
+margin-top:10px;
+font-weight:600;
+font-size:15px;
+}
+
+/* Smooth transition */
+.box{
+transition:0.3s;
+}
